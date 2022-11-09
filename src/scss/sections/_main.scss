@@ -3,12 +3,12 @@
   justify-content: center;
   padding: 20px 0 0;
   .wrapper {
-    width: 90vw;
+    width: 97vw;
     @include flex-elems(flex, center, flex-end);
   }
   &-heading {
     transform: translateX(2rem);
-    max-width: 27rem;
+    max-width: 30rem;
     min-height: 13rem;
     background: rgba(0, 0, 0, 0.9);
     border: 1px solid #c00;

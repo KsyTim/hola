@@ -1,0 +1,75 @@
+.article {
+  padding: 65px 0 0;
+  @include flex-elems(flex, null, center);
+  &-header {
+    display: none;
+  }
+  .wrapper {
+    width: 70vw;
+  }
+  &-author {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &-info {
+      color: $dark-txt;
+      font-family: Futura PT Bold, Geneva, Arial, sans-serif;
+      font-size: 13px;
+    }
+    &-location {
+      color: $grey;
+    }
+    &-date {
+      font-size: 11px;
+      color: $grey-sec;
+      font-family: Futura PT, Geneva, Arial, sans-serif;
+    }
+  }
+  &-content {
+    text-align: justify;
+    &-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 60px 0 25px;
+      line-height: 1.8rem;
+    }
+    &-text {
+      width: 100%;
+      margin: 0 auto 38px;
+      font-size: 1rem;
+      line-height: 1.9rem;
+      letter-spacing: .025em;
+      color: $dark-txt;
+      &__marked {
+        font-weight: 700;
+        color: $ruby;
+        border-bottom: 1px dotted $ruby;
+      }
+    }
+    &-figure {
+      margin: 0 0 30px;
+    }
+    &-photo {
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &_caption {
+        width: 100%;
+        text-align: center;
+        font-size: .8rem;
+        line-height: 1.3rem;
+      }
+    }
+    img[align="left"] {
+      width: 285px;
+      height: auto;
+      margin: 0 15px 10px 0;
+    }
+    h4 {
+      margin: 5px 0 15px;
+    }
+    h5 {
+      margin: 5px 0 10px;
+    }
+  }
+}
