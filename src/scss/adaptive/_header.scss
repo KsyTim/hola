@@ -1,0 +1,21 @@
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: $ruby;
+    position: relative;
+    &-breadcrumbs {
+      position: absolute;
+      bottom: -55%;
+      right: 0;
+      left: 0;
+      background-color: $white;
+      padding: 12px 6px;
+      @include flex-elems(flex, center, center);
+      box-shadow: 0 0.005rem 0.2rem 0.05rem $shadow;
+    }
+    &-menu {
+      &-icon {
+        fill: $white;
+      }
+    }
+  }
+}  

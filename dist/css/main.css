@@ -532,3 +532,25 @@ body {
   padding: 0;
   max-width: 80px;
 }
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: #c00;
+    position: relative;
+  }
+  .header-breadcrumbs {
+    position: absolute;
+    bottom: -55%;
+    right: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 12px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.005rem 0.2rem 0.05rem #d3d3d3;
+  }
+  .header-menu-icon {
+    fill: #ffffff;
+  }
+}
