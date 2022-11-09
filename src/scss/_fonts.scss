@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('../../dist/fonts/LibreBaskerville.woff2') format('woff2'),
+    url('../../dist/fonts/LibreBaskerville.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../../dist/fonts/FuturaPT.woff2') format('woff2'),
+    url('../../dist/fonts/FuturaPT.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

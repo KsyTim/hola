@@ -1,0 +1,170 @@
+.header {
+  font-family: Futura PT, Geneva, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: .2em;
+  flex: 0 0 100%;
+  padding: 10px 38px 10px 20px;
+  box-shadow: 0 0.005rem 0.2rem 0.05rem $shadow;
+  position: relative;
+  .wrapper {
+    @include flex-elems(flex, center, space-between);
+  }
+
+  &-logo {
+    &-icon {
+      width: 113px;
+      fill: $white;
+    }
+    &-back {
+      fill: $ruby; 
+    }
+  }
+  &-breadcrumbs {
+    &-container {
+      @include flex-elems(flex, center);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: $grey;
+    }
+    &-link {
+      &:not(:last-child) {
+        position: relative;
+        margin-right: 27px;
+        &:after {
+          position: absolute;
+          content: "/";
+          top: -3px;
+          right: -18px;
+          bottom: 0;
+          color: #999;
+          font-size: 18px;
+        }
+      }
+      &__active {
+        color: $ruby;
+      }
+    }
+  }
+  &-menu {
+    width: 38px;
+    &-button {
+      display: block;
+    }
+    &-icon {
+      fill: $ruby;
+    }
+    &__visible {
+      position: fixed;
+      top: 0;
+      right: 50px;
+      width: 380px;
+      height: 100%;
+      background-color: $white;
+      overflow: hidden;
+      &-no {
+        display: none;
+      }
+      &-container {
+        overflow-y: auto;
+        height: 100%;
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+        &-item {
+          padding: 16px 16px 16px 30px;
+        }
+        .menu {
+          &-header {
+            @include flex-elems(flex, center, space-between);
+            background-color: $dark;
+            a {
+              display: block;
+            }
+            &-close {
+              width: 40px;
+              transform: rotate(45deg);
+            }
+          }
+          &-search {
+            padding-right: 24px;
+            margin: 0 0 15px;
+            @include flex-elems(flex);
+            background-color: $light-bg;
+            input {
+              border: 0;
+              outline: 0;
+              flex-grow: 1;
+              background-color: transparent;
+              &::placeholder {
+                text-transform: uppercase;
+                letter-spacing: .2rem;
+                font-size: 10px;
+              }
+            }
+            &-submit {
+              width: 40px;
+              @include flex-elems(flex, center, center);
+              outline: none;
+              border: none;
+              background-color: transparent;
+            }
+          }
+          &-body,
+          &-footer,
+          &-socials {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+              width: 100%;
+              text-transform: uppercase;
+              letter-spacing: .2rem;
+              padding: 0.75rem 1.5rem;
+            }
+          }
+          &-body {
+            li {
+              &:last-child {
+                margin-bottom: 15px;
+                padding-top: 0;
+                padding-bottom: 0;
+                a {
+                  display: block;
+                  padding: 0.75rem 0;
+                  border: 2px solid $ruby;
+                  border-right: none;
+                  border-left: none;
+                }
+              }
+            }
+          }
+          &-footer, 
+          &-socials {
+            background-color: $dark;
+            padding: 1.5rem 0 2rem;
+            li {
+              font-size: 16px;
+              color: $white;
+              text-transform: capitalize;
+            }
+            &-icon {
+              width: 24px;
+            }
+          }
+          &-socials {
+            padding-top: 0;
+            @include flex-elems(flex, null, center);
+            li {
+              @include flex-elems(flex, center, center);
+              padding: 0;
+              max-width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
