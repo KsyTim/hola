@@ -1,0 +1,21 @@
+@media screen and (max-width: 992px) {
+  .footer {
+    &-nav,
+    &-menu {
+      flex-direction: column;
+    }
+    &-logo {
+      order: 1;
+    }
+    &-menu {
+      align-items: flex-start;
+      font-size: 1.2rem;
+      flex: unset;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

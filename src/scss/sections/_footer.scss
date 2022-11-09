@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: $dark;
+  .wrapper {
+    width: 80vw;
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-menu, 
+  &-socials {
+    font-family: Futura PT, Geneva, Arial, sans-serif;
+    color: $white;
+    text-transform: capitalize;
+    font-size: .75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include flex-elems(flex, center, space-between);
+    flex: 0 0 40vw;
+  }
+  &-socials {
+    flex: 0 0 12vw;
+    li {
+      width: 15px;
+    }
+  }
+  &-info {
+    color: $white;
+    font: 400 0.6rem/1.3em Futura PT, Geneva, Arial, sans-serif;
+    letter-spacing: .05rem;
+  }
+}

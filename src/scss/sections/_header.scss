@@ -5,7 +5,12 @@
   flex: 0 0 100%;
   padding: 10px 38px 10px 20px;
   box-shadow: 0 0.005rem 0.2rem 0.05rem $shadow;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: 500;
   .wrapper {
     @include flex-elems(flex, center, space-between);
   }

@@ -1,5 +1,5 @@
 .article {
-  padding: 65px 0 0;
+  padding: 65px 0 40px;
   @include flex-elems(flex, null, center);
   &-header {
     display: none;
