@@ -1,0 +1,30 @@
+{
+  "name": "hola",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss": "gulp styles",
+    "watch": "gulp watch",
+    "js-prod": "webpack --config webpack.prod.config.js",
+    "js-dev": "webpack --config webpack.dev.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@webpack-cli/generators": "^2.5.0",
+    "babel-loader": "^9.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0"
+  },
+  "description": ""
+}
