@@ -15,3 +15,12 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  src: url('../../dist/fonts/FuturaPT-Bold.woff2') format('woff2'),
+    url('../../dist/fonts/FuturaPT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

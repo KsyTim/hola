@@ -351,6 +351,13 @@ template {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Futura PT Bold";
+  src: url("../../dist/fonts/FuturaPT-Bold.woff2") format("woff2"), url("../../dist/fonts/FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -533,6 +540,46 @@ body {
   max-width: 80px;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0;
+}
+.main .wrapper {
+  width: 90vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main-heading {
+  transform: translateX(2rem);
+  max-width: 27rem;
+  min-height: 13rem;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid #c00;
+  padding: 16px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-heading h1, .main-heading p {
+  font-family: Futura PT Bold, Geneva, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.024em;
+  color: #ffffff;
+  text-align: left;
+}
+.main-heading p {
+  font-size: 0.95rem;
+  text-transform: none;
+}
+.main-picture {
+  flex: 0 0 60vw;
+  height: auto;
+}
+
 @media screen and (max-width: 992px) {
   .header {
     background-color: #c00;
@@ -552,5 +599,49 @@ body {
   }
   .header-menu-icon {
     fill: #ffffff;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-heading h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main {
+    padding: 60px 0 0;
+  }
+  .main-heading {
+    transform: translateX(1.3rem);
+    padding: 16px 32px;
+  }
+  .main-heading h1 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .wrapper {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .main-heading {
+    transform: translateY(0.5rem);
+    width: 90%;
+    min-height: 9rem;
+    max-width: 100%;
+  }
+  .main-heading h1, .main-heading p {
+    text-align: center;
+  }
+  .main-heading h1 {
+    font-size: 1.8rem;
+  }
+  .main-picture {
+    flex: 0 0 40vw;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-heading h1 {
+    font-size: 1.3rem;
   }
 }

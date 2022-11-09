@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0;
+  .wrapper {
+    width: 90vw;
+    @include flex-elems(flex, center, flex-end);
+  }
+  &-heading {
+    transform: translateX(2rem);
+    max-width: 27rem;
+    min-height: 13rem;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #c00;
+    padding: 16px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1, p {
+      font-family: Futura PT Bold, Geneva, Arial, sans-serif;
+      font-size: 2rem;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: 0.024em;
+      color: $white;
+      text-align: left;
+    }
+
+    p {
+      font-size: .95rem;
+      text-transform: none;
+    }
+  }
+  &-picture {
+    flex: 0 0 60vw;
+    height: auto;
+  }
+}
