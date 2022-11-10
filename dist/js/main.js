@@ -16,7 +16,17 @@
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerMenu */ \"./src/js/modules/headerMenu.js\");\n/* harmony import */ var _modules_modalOpener__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modalOpener */ \"./src/js/modules/modalOpener.js\");\n/* harmony import */ var _modules_countTimer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/countTimer */ \"./src/js/modules/countTimer.js\");\n\n\n\n(0,_modules_headerMenu__WEBPACK_IMPORTED_MODULE_0__.headerMenu)();\n(0,_modules_modalOpener__WEBPACK_IMPORTED_MODULE_1__.modalOpener)();\n(0,_modules_countTimer__WEBPACK_IMPORTED_MODULE_2__.countTimer)('12 November 2022');\n\n//# sourceURL=webpack://hola/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_headerMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/headerMenu */ \"./src/js/modules/headerMenu.js\");\n/* harmony import */ var _modules_modalOpener__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modalOpener */ \"./src/js/modules/modalOpener.js\");\n/* harmony import */ var _modules_countTimer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/countTimer */ \"./src/js/modules/countTimer.js\");\n/* harmony import */ var _modules_comeBacker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/comeBacker */ \"./src/js/modules/comeBacker.js\");\n\n\n\n\n(0,_modules_headerMenu__WEBPACK_IMPORTED_MODULE_0__.headerMenu)();\n(0,_modules_modalOpener__WEBPACK_IMPORTED_MODULE_1__.modalOpener)();\n(0,_modules_countTimer__WEBPACK_IMPORTED_MODULE_2__.countTimer)('12 November 2022');\n(0,_modules_comeBacker__WEBPACK_IMPORTED_MODULE_3__.comeBacker)();\n\n//# sourceURL=webpack://hola/./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/comeBacker.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/comeBacker.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"comeBacker\": () => (/* binding */ comeBacker)\n/* harmony export */ });\nvar comeBacker = function comeBacker() {\n  var openModal = function openModal() {\n    if (document.querySelector('.modal-layout').classList.length > 1) {\n      document.querySelector('.modal-layout').classList.remove('modal-layout__novisible');\n      document.querySelector('body').classList.add('modal__opened');\n    } else if (document.querySelector('.modal-layout').classList.length <= 1) {\n      document.querySelector('.modal-layout').classList.add('modal-layout__novisible');\n      document.querySelector('body').classList.remove('modal__opened');\n    }\n  };\n  document.querySelectorAll('a').forEach(function (elem) {\n    if (elem.getAttribute('href') !== '#') {\n      elem.addEventListener('click', function (event) {\n        event.preventDefault();\n        openModal();\n      });\n    }\n  });\n  document.addEventListener('mouseleave', function (event) {\n    openModal();\n  });\n};\n\n//# sourceURL=webpack://hola/./src/js/modules/comeBacker.js?");
 
 /***/ }),
 
