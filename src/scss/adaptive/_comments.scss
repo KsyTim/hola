@@ -1,0 +1,36 @@
+@media screen and (max-width: 992px) {
+  .comments {
+    &-photo {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comments {
+    .wrapper {
+      width: 90vw;
+    }
+    &-photo {
+      display: none;
+    }
+    &-info {
+      flex: 0 0 100%;
+    }
+    &__visible {
+      @include flex-elems(flex, center);
+      margin-bottom: 10px;
+      .comments {
+        &-photo {
+          display: block;
+        }
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+    }
+  }
+}

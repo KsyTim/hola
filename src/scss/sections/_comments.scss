@@ -1,0 +1,61 @@
+.comments {
+  font-family: Futura PT, Geneva, Arial, sans-serif;
+  @include flex-elems(flex, null, center);
+  padding: 0 0 70px;
+  .wrapper {
+    width: 70vw;
+  }
+  &-title {
+    font: 400 1.7rem Futura PT Bold, Geneva, Arial, sans-serif;
+    color: $bronze;
+    letter-spacing: .3rem;
+    margin-left: 24px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &-item {
+    @include flex-elems(flex, null, space-between);
+    border-bottom: 1px solid $bronze;
+    padding: 30px 0;
+    &:first-of-type {
+      border-top: 1px solid $bronze;
+    }
+  }
+  &__visible {
+    .comments {
+      &-photo {
+        display: none;
+      }
+    }
+    margin-bottom: 5px;
+  }
+  &-photo {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 1px solid $bronze;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 90%;
+  }
+  &-date {
+    font-size: 1rem;
+  }
+  &-author {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  &-text {
+    margin: 0 0 25px;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+  &-subitem {
+    padding-left: 7vw;
+  }
+}
