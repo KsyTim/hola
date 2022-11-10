@@ -181,6 +181,7 @@
       </div>
     </nav>
     <!-- /.header-menu__visible -->
+    <div class="layout"></div>
   </header>
   <!-- /.header -->
   <main class="main">
@@ -269,8 +270,7 @@
           <picture class="article-content-photo">
             <img src="./img/foto6.jpg" alt="Alt Picture" width="657" height="645">
           </picture>
-          <figcaption class="article-content-photo_caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fuga
-            a nam.</figcaption>
+          <figcaption class="article-content-photo_caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fuga a nam.</figcaption>
         </figure>
         <h3 class="article-content-heading">¿Todavía sueñas con un cuerpo delgado? ¡es hora de actuar!¡deshagámonos de la grasa horrible de inmediato!</h3>
         <h4><b>Responderé a las preguntas más populares:</b></h4>
@@ -664,5 +664,38 @@
     <!-- /.wrapper -->
   </footer>
   <!-- /.footer -->
+  <div class="modal-layout modal-layout__novisible">
+    <form action="#" class="modal">
+      <h3 class="article-content-heading">Подождите! Для Вас есть уникальное предложение - <span class="article-content-text__marked">скидка&nbsp;50%</span></h3>
+      <figure class="article-content-figure">
+        <picture class="article-content-photo">
+          <img src="./img/product.png" alt="Product Picture" width="773" height="1504">
+        </picture>
+        <figcaption class="article-content-photo_caption">DESCUENTO <br /> <s>55800COLONES</s> <br /><span class="article-content-text__marked">27900COLONES</span></figcaption>
+      </figure>
+      <h3 class="article-content-heading">SU TARIFA PROMOCIONAL FINALIZARÁ DESPUÉS DE:
+        <span class="timer-action">
+        </span>
+      </h3>
+      <div class="timer-numbers" id="timer">
+        <span id="timer-hours">19</span>
+        <span>:</span>
+        <span id="timer-minutes">45</span>
+        <span>:</span>
+        <span id="timer-seconds">12</span>
+      </div>
+      <div class="modal-item-container">
+        <div class="modal-item">
+          <label for="name">Nome/Cognome</label>
+          <input type="text" id="name" placeholder="Alejandro Rodriguez">
+        </div>
+        <div class="modal-item">
+          <label for="phone">Mob.telefono</label>
+          <input type="text" id="phone" placeholder="+506 123456789">
+        </div>
+      </div>
+      <button class="modal-button">Ordene Biolica con 50% de descuento!</button>
+    </form>
+  </div>
   <script src="./js/main.js"></script>
 </body>

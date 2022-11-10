@@ -17,3 +17,17 @@ body {
   justify-content: $justify;
   align-items: $align;
 }
+
+.layout {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $layout-bgc;
+  z-index: 501;
+  display: none;
+  &__visible {
+    display: block;
+  }
+}

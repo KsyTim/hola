@@ -1,0 +1,71 @@
+@media screen and (max-width: 1024px) {
+  .modal {
+    justify-content: unset;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .modal {
+    &-layout {
+      .article {
+        &-content {
+          &-photo {
+            &_caption {
+              max-width: 20vw;
+            }
+          }
+        }
+      }
+    }
+    &-item {
+      width: 100%;
+      &-container {
+        flex-direction: column;
+      }
+      input {
+        text-align: center;
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+  }
+} 
+
+@media screen and (max-width: 680px) {
+  .modal {
+    &-layout {
+      .article {
+        &-content {
+          &-photo {
+            &_caption {
+              max-width: 25vw;
+              right: 10%;
+            }
+          }
+          &-heading {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    &-layout {
+      .article {
+        &-content {
+          &-photo {
+            &_caption {
+              max-width: 50vw;
+              position: unset;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
